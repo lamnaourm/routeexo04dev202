@@ -20,8 +20,8 @@ export default function Acceuil() {
     return (
         <div className='list'>
 
-            {countries.map(c => 
-                <div className='pays'>
+            {countries.map((c, index) => 
+                <div key={index} className='pays'>
                     <img src={c.flags.png} alt={c.name.official} onClick={() => navigate('/countries/'+c.name.common)}/>
                     <h4>{c.name.official}</h4>
                 </div>

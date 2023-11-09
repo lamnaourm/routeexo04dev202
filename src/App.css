@@ -3,3 +3,13 @@
   grid-template-columns: repeat(4,1fr);
   gap: 30px;
 }
+
+.header {
+  background-color: black;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
